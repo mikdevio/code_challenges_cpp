@@ -1,9 +1,9 @@
 # CMakeLists.txt file
 
-# Incluir primero el punto de entrada de las pruebas
+# Include entry point for test
 add_subdirectory(tests_common)
 
-# Registrar las carpetas de los retos agregando su ruta relativa
+# Include all challenges directories here
 add_subdirectory(codeforces_problems/001_two_sum)
 add_subdirectory(leetcode_problems/001_two_array_sum)
-adsubdirectory(codewars_katas/001_oposite_sides-array)
+add_subdirectory(codewars_katas/001_oposite_sides_array)

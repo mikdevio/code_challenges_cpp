@@ -1,0 +1,45 @@
+# Compilation files
+build/
+bin/
+lib/
+dist/
+
+# Cmake generated files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+
+# Configuration files folders
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# CLion / JetBrains
+.idea/
+*.iws
+*.iml
+
+# Qt Creator
+*.user
+
+# Sublimetext
+*.sublime-project
+*.sublime-workspace
+
+# archlinux files
+.directory
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Log files
+*.log
+*.bak
+*.tmp
