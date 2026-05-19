@@ -32,10 +32,10 @@ cat << 'EOF' > "$DIR/solution_test.cpp"
 
 int __FUNCTION__(const std::vector<int>& arr);
 
-TEST_CASE("Pruebas para __RETO__", "[__PLATAFORMA__]") {
-    SECTION("Caso Base") {
-        std::vector<int> datos = {1, 2, 3};
-        REQUIRE(__FUNCTION__(datos) == 0);
+TEST_CASE("Pruebas para __CHALLENGE__", "[__PLATFORM__]") {
+    SECTION("Basic case") {
+        std::vector<int> data = {1, 2, 3};
+        REQUIRE(__FUNCTION__(data) == 0);
     }
 }
 EOF
