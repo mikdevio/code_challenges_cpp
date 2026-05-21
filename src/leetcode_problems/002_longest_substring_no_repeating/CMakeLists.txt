@@ -1,0 +1,3 @@
+add_executable(test_002_longest_substring_no_repeating solution.cpp solution_test.cpp)
+target_link_libraries(test_002_longest_substring_no_repeating PRIVATE tests_common_lib Catch2::Catch2)
+add_test(NAME 002_longest_substring_no_repeating COMMAND test_002_longest_substring_no_repeating)
