@@ -28,21 +28,21 @@
 #include <vector>
 #include <algorithm>
 
-class Solution {
-public:
-    int lengthOfLongestSubstring(std::string s) {
+#include "solution.h"
+
+int Solution::lengthOfLongestSubstring(std::string s) {
         
-        std::vector<char> char_vector;
+    std::vector<char> char_vector;
 
-        for(char c: s) {
-            auto it = std::find(char_vector.begin(), char_vector.end(), c);
-            if(it == char_vector.end()) {
-                    char_vector.push_back(c);
-            } else {
-                char_vector.clear();
-            }
+    for(char c: s) {
+        auto it = std::find(char_vector.begin(), char_vector.end(), c);
+        if(it == char_vector.end()) { 
+            char_vector.push_back(c); 
+        } 
+        else {
+            char_vector.clear();
         }
-
-        return char_vector.size();
     }
-};
+
+    return char_vector.size();
+}
